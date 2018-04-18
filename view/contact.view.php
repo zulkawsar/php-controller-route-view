@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Contact</title>
-</head>
-<body>
+
+<?php require 'partial/head.php'; ?>
+	
+
 	<h2>Contact</h2>
-</body>
-</html>
+
+
+
+<?php require 'partial/footer.php'; ?>

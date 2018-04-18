@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Php Beginner</title>
-</head>
-<body>
-	<h2>Hello</h2>
+<?php require 'partial/head.php'; ?>
 	
   <ul>
   	<?php foreach ($tasks as $task) : ?>
@@ -23,5 +17,4 @@
   	<?php endforeach; ?>
   </ul>
 
-</body>
-</html>
+<?php require 'partial/footer.php'; ?>

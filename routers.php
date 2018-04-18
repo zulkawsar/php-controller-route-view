@@ -1,10 +1,10 @@
 <?php
 
 
-$router->define([
+$router->get('', 'controller/index.php');
+$router->get('about', 'controller/about.php');
+$router->get('contact', 'controller/contact.php');
+$router->post('name', 'controller/add-name.php');
 
-	'' => 'controller/index.php',
-	'contact' => 'controller/contact.php',
-	'about' => 'controller/about.php'
 
-]);
+// var_dump($router->routes);

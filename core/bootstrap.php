@@ -2,6 +2,7 @@
 <?php 
 
 $config = require 'config.php';
+require 'core/Request.php';
 require 'core/Router.php';
 require 'core/database/connection.php';
 require 'core/database/QueryBuilder.php';

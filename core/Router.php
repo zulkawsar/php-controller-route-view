@@ -45,7 +45,7 @@ class Router
 
 	public function post($uri, $controller)
 	{
-		$this->routes['GET'][$uri] = $controller;
+		$this->routes['POST'][$uri] = $controller;
 	}
 
 

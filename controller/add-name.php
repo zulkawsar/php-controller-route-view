@@ -1,4 +1,9 @@
 <?php 
  
 
- var_dump($_SERVER);
+$app['database']->insert('users', [
+	'name' => $_POST['name'],
+]);
+
+
+header('location: /');

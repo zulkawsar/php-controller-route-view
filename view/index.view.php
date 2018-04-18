@@ -1,15 +1,9 @@
 <?php require 'partial/head.php'; ?>
 	
       <ul>
-      	<?php foreach ($tasks as $task) : ?>
+      	<?php foreach ($users as $user) : ?>
       	 	<li>
-      	 		
-    	  	 	<?php if ($task->completed ) : ?>
-    	  	 		<strike> <?= $task->description ?> </strike>
-    	  	 	<?php else: ?>
-    	  	 	 	<?= $task->description ?>
-    	  	 	<?php endif; ?>
-
+            <?= $user->name ?>
 
       	 	</li>
       	 		
@@ -17,10 +11,10 @@
       	<?php endforeach; ?>
       </ul>
 
-      <form method="GET" action="/name">
+      <form method="POST" action="/names">
           <input type="text" name="name">
 
-          <button type="submit" value="submit" > Submit</button>
+          <button type="submit"> Submit</button>
       </form>
 
 <?php require 'partial/footer.php'; ?>
